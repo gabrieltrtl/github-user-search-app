@@ -22,6 +22,7 @@ $color-3: #4B6A9B;
 $color-4: #2B3442;
 $neutral-color-1: #FEFEFE;
 $neutral-color-2: #F6F8FF;
+$neutral-color-3: #FFFFFF;
 
 //Dark
 $color-1-d: #FFFFFF;
@@ -38,6 +39,7 @@ html[data-theme="light"] {
 --color-4: #{$color-4};
 --neutral-color-1: #{$neutral-color-1};
 --neutral-color-2: #{$neutral-color-2};
+--neutral-color-3: #{$neutral-color-3};
 }
     
 html[data-theme="dark"] {
