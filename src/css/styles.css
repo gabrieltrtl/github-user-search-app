@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html[data-theme=light] {
+  --color-1: #0079FF;
+  --color-2: #697C9A;
+  --color-3: #4B6A9B;
+  --color-4: #2B3442;
+  --neutral-color-1: #FEFEFE;
+  --neutral-color-2: #F6F8FF;
+}
+
+html[data-theme=dark] {
+  --color-1: #FFFFFF;
+  --color-2: #0079FF;
+  --neutral-color-1: #1E2A47;
+  --neutral-color-2: #141D2F;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, fieldset {
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+  background-color: var(--neutral-color-2);
+  color: var(--color-3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__theme {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=styles.css.map */

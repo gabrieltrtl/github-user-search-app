@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import './utils/utilities';
 
 
@@ -34,7 +34,20 @@ button, fieldset {
 
 body {
   min-height: 100vh;
-  font-family: "Rubik", sans-serif;
-  background-color: $color1;
-  color: $neutral-color-1;
+  font-family: "Space Mono", monospace;
+  background-color: var(--neutral-color-2);
+  color: var(--color-3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__theme {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
 }
