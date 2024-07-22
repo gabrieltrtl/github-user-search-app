@@ -67,6 +67,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 24px;
+  margin-bottom: 36px;
 }
 
 .header__theme {
@@ -74,4 +76,6 @@ body {
   align-items: center;
   gap: 16px;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8125rem;
 }/*# sourceMappingURL=styles.css.map */
