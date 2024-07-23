@@ -23,14 +23,17 @@
     <div class="form-bg">
       <form class="form" action="">
         <img class="search__img" src="./assets/icon-search.svg" alt="">
-        <input type="search" placeholder="Search GitHub username...">
+        <label for="search-input" class="sr-only">Username</label>
+        <input id="search-input" type="search" placeholder="Search GitHub username...">
         <button class="form__btn">Search</button>
       </form>
+      <p class="form__error">No Results</p>
     </div>
-    Joined
-    Repos
-    Followers
-    Following
+    <div class="main__github-result">
+      <div class="profile__intro">
+        
+      </div>
+    </div>
   </main>
 
   <script src="./src/js/main.js"></script>
