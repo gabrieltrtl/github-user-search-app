@@ -110,15 +110,31 @@ input[type="search"]::placeholder {
   background-color: var(--neutral-color-3);
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
 }
 
 .profile__intro {
   display: flex;
   align-items: center;
   gap: 19.5px;
+  margin-bottom: 33px;
 }
 
 .profile__avatar {
   max-width: 70px;
   border-radius: 50%;
+}
+
+.profile__numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 18px 14px;
+  font-size: map-get($fonts , "$xsmall");
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }

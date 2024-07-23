@@ -10,7 +10,7 @@ async function fetchGitHubUser(event) {
 
   const username = document.getElementById('search-input').value;
   const errorMsg = document.querySelector('.form__error');
-  const profileResults = document.querySelector('.profile__intro');
+  const profileResults = document.querySelector('.main__github-result');
 
   if (!username) {
     errorMsg.style.display = "block";
@@ -27,11 +27,32 @@ async function fetchGitHubUser(event) {
     const data = await response.json();
     console.log(data);
     profileResults.innerHTML = `
-    <img src="${data.avatar_url}" class="profile__avatar">
-    <div>
-      <h2>${data.name}</h2>
-      <p>${data.login}</p>
-      <p>${data.created_at}</p>
+    <div class="profile__intro">
+      <img src="${data.avatar_url}" class="profile__avatar">
+      <div class="profile__info">
+        <h2>${data.name}</h2>
+        <p>${data.login}</p>
+        <p>${data.created_at}</p>
+      </div>
+    </div>
+
+    <div class="profile__bio">
+      <p>${data.bio}</p>
+    </div>
+
+    <div class="profile__numbers">
+      <div class="profile__repos container">
+      <h3>Repos</h3>
+      <p>${data.public_repos}</p>
+      </div>
+      <div class="profile__followers container">
+      <h3>Followers</h3>
+      <p>${data.followers}</p>
+      </div>
+      <div class="profile__following container">
+      <h3>Following</h3>
+      <p>${data.following}</p>
+    </div>
     </div>
     `
     
