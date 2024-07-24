@@ -37,7 +37,7 @@ async function fetchGitHubUser(event) {
     </div>
 
     <div class="profile__bio">
-      <p class="bio__text">${data.bio}</p>
+      <p class="bio__text">${data.bio || 'Biography Not Available'}</p>
     </div>
 
     <div class="profile__numbers">
@@ -58,19 +58,19 @@ async function fetchGitHubUser(event) {
     <div class="profile__social container">
       <div class="social__item">
       <img src="./assets/icon-location.svg">
-        <p>${data.location}<p>
+        <p>${data.location || 'Not Available'}<p>
       </div>
       <div class="social__item">
       <img src="./assets/icon-website.svg">
-        <p>${data.location}<p>
+        <p>${data.blog || 'Not Available'}<p>
       </div>
       <div class="social__item">
       <img src="./assets/icon-twitter.svg">
-        <p>${data.location}<p>
+        <p>${data.twitter_username || 'Not Available'}<p>
         </div>
       <div class="social__item">
       <img src="./assets/icon-company.svg">
-      <p>${data.location}<p>
+      <p>${data.company || 'Not Available'}<p>
       </div>
     </div>
     `

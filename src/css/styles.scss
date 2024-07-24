@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 31px 24px 0 24px;
   margin-bottom: 36px;
 }
 
@@ -145,6 +145,12 @@ input[type="search"]::placeholder {
     align-items: center;
     gap: 8px;
   }
+}
+
+.profile__social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .social__item {
