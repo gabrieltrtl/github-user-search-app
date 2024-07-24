@@ -53,6 +53,11 @@ async function fetchGitHubUser(event) {
       <h3>Following</h3>
       <p>${data.following}</p>
     </div>
+
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
     `
     
