@@ -37,27 +37,41 @@ async function fetchGitHubUser(event) {
     </div>
 
     <div class="profile__bio">
-      <p>${data.bio}</p>
+      <p class="bio__text">${data.bio}</p>
     </div>
 
     <div class="profile__numbers">
       <div class="profile__repos container">
-      <h3>Repos</h3>
-      <p>${data.public_repos}</p>
+        <h3>Repos</h3>
+        <p>${data.public_repos}</p>
       </div>
       <div class="profile__followers container">
-      <h3>Followers</h3>
-      <p>${data.followers}</p>
+        <h3>Followers</h3>
+        <p>${data.followers}</p>
       </div>
       <div class="profile__following container">
-      <h3>Following</h3>
-      <p>${data.following}</p>
+        <h3>Following</h3>
+        <p>${data.following}</p>
+      </div>
     </div>
 
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="profile__social container">
+      <div class="social__item">
+      <img src="./assets/icon-location.svg">
+        <p>${data.location}<p>
+      </div>
+      <div class="social__item">
+      <img src="./assets/icon-website.svg">
+        <p>${data.location}<p>
+      </div>
+      <div class="social__item">
+      <img src="./assets/icon-twitter.svg">
+        <p>${data.location}<p>
+        </div>
+      <div class="social__item">
+      <img src="./assets/icon-company.svg">
+      <p>${data.location}<p>
+      </div>
     </div>
     `
     

@@ -126,6 +126,10 @@ input[type="search"]::placeholder {
   border-radius: 50%;
 }
 
+.profile__bio {
+  margin-bottom: 24px;
+}
+
 .profile__numbers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -141,4 +145,10 @@ input[type="search"]::placeholder {
     align-items: center;
     gap: 8px;
   }
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  gap: 19.25px
 }
