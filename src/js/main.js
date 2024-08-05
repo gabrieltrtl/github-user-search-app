@@ -30,9 +30,11 @@ async function fetchGitHubUser(event) {
     <div class="profile__intro">
       <img src="${data.avatar_url}" class="profile__avatar">
       <div class="profile__info">
-        <h2>${data.name}</h2>
-        <p class="profile__username">@${data.login}</p>
-        <p>${data.created_at.substring(0, 10)}</p>
+        <div>
+          <h2>${data.name}</h2>
+          <p class="profile__username">@${data.login}</p>
+        </div>
+        <p>Joined ${data.created_at.substring(0, 10)}</p>
       </div>
     </div>
 

@@ -167,6 +167,11 @@ input[type="search"]::placeholder {
   .profile__username {
     color: var(--color-1);
   }
+  @include device(desktop) {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
 }
 
 .profile__avatar {

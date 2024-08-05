@@ -208,6 +208,13 @@ input[type=search]::placeholder {
 .profile__info .profile__username {
   color: var(--color-1);
 }
+@media (min-width: 75rem) {
+  .profile__info {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
+}
 
 .profile__avatar {
   max-width: 70px;
