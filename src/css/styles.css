@@ -71,6 +71,17 @@ body {
   padding: 31px 24px 0 24px;
   margin-bottom: 36px;
 }
+@media (min-width: 700px) {
+  .header {
+    max-width: 573px;
+    margin: 0 auto 36px auto;
+  }
+}
+@media (min-width: 75rem) {
+  .header {
+    max-width: 730px;
+  }
+}
 
 .header__theme {
   display: flex;
@@ -79,10 +90,22 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .container__main {
   padding: 0 24px;
+}
+@media (min-width: 700px) {
+  .container__main {
+    max-width: 573px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 75rem) {
+  .container__main {
+    max-width: 730px;
+  }
 }
 
 .form-bg {
@@ -90,6 +113,11 @@ body {
   padding: 6.5px 7px 7.5px 16px;
   margin-bottom: 16px;
   position: relative;
+}
+@media (min-width: 700px) {
+  .form-bg {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.25);
+  }
 }
 
 .form {
@@ -123,12 +151,24 @@ input[type=search]::placeholder {
   font-size: 14px;
   font-weight: 700;
 }
+.form__btn:hover {
+  background-color: #60ABFF;
+  cursor: pointer;
+}
 
 .form__error {
   color: #F74646;
   font-size: 15px;
   font-weight: 700;
   display: none;
+}
+@media (min-width: 700px) {
+  .form__error {
+    position: absolute;
+    right: 114px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .main__github-result {
@@ -138,6 +178,11 @@ input[type=search]::placeholder {
   flex-direction: column;
   padding: 32px 24px 48px 24px;
 }
+@media (min-width: 75rem) {
+  .main__github-result {
+    padding: 48px;
+  }
+}
 
 .profile__intro {
   display: flex;
@@ -145,14 +190,44 @@ input[type=search]::placeholder {
   gap: 19.5px;
   margin-bottom: 33px;
 }
+@media (min-width: 700px) {
+  .profile__intro {
+    gap: 41px;
+    margin-bottom: 24px;
+  }
+}
+
+.profile__info h2 {
+  font-size: 16px;
+}
+@media (min-width: 700px) {
+  .profile__info h2 {
+    font-size: 26px;
+  }
+}
+.profile__info .profile__username {
+  color: var(--color-1);
+}
 
 .profile__avatar {
   max-width: 70px;
   border-radius: 50%;
 }
+@media (min-width: 700px) {
+  .profile__avatar {
+    max-width: 117px;
+  }
+}
 
 .profile__bio {
+  font-size: 13px;
   margin-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .profile__bio {
+    margin-bottom: 32px;
+    font-size: 15px;
+  }
 }
 
 .profile__numbers {
@@ -165,11 +240,25 @@ input[type=search]::placeholder {
   border-radius: 10px;
   margin-bottom: 24px;
 }
+@media (min-width: 700px) {
+  .profile__numbers {
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+}
 .profile__numbers .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+.profile__numbers .container p {
+  font-weight: 700;
+}
+@media (min-width: 700px) {
+  .profile__numbers .container p {
+    font-size: 22px;
+  }
 }
 
 .profile__social {
@@ -177,9 +266,33 @@ input[type=search]::placeholder {
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 700px) {
+  .profile__social {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 19px 65px;
+  }
+}
+@media (min-width: 75rem) {
+  .profile__social {
+    gap: 19px 62px;
+  }
+}
 
 .social__item {
   display: flex;
   align-items: center;
   gap: 19.25px;
+  cursor: pointer;
+}
+.social__item:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 75rem) {
+  .bio__text,
+  .profile__numbers,
+  .profile__social {
+    margin-left: 148px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -31,8 +31,8 @@ async function fetchGitHubUser(event) {
       <img src="${data.avatar_url}" class="profile__avatar">
       <div class="profile__info">
         <h2>${data.name}</h2>
-        <p>${data.login}</p>
-        <p>${data.created_at}</p>
+        <p class="profile__username">@${data.login}</p>
+        <p>${data.created_at.substring(0, 10)}</p>
       </div>
     </div>
 
