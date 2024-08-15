@@ -142,11 +142,29 @@ body {
   max-width: 20px;
 }
 
+input[type=search]:-webkit-autofill,
+input[type=search]:-webkit-autofill:hover,
+input[type=search]:-webkit-autofill:focus,
+input[type=search]:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+  -webkit-text-fill-color: #333 !important; /* Cor do texto */
+}
+
+:root[data-theme=dark] input[type=search]:-webkit-autofill,
+:root[data-theme=dark] input[type=search]:-webkit-autofill:hover,
+:root[data-theme=dark] input[type=search]:-webkit-autofill:focus,
+:root[data-theme=dark] input[type=search]:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px var(--neutral-color-3) inset !important;
+  -webkit-text-fill-color: #FFFFFF !important; /* Cor do texto */
+}
+
 input[type=search] {
   outline: none;
   border: none;
   flex: 1;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 input[type=search]::placeholder {
@@ -186,7 +204,7 @@ input[type=search]::placeholder {
 .main__github-result {
   background-color: var(--neutral-color-3);
   border-radius: 15px;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 32px 24px 48px 24px;
 }
