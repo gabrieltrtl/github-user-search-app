@@ -172,7 +172,7 @@ input[type="search"]::placeholder {
     }
   }
   .profile__username {
-    color: var(--color-1);
+    color: $color-1
   }
   @include device(desktop) {
     display: flex;
@@ -217,7 +217,7 @@ input[type="search"]::placeholder {
     align-items: center;
     gap: 8px;
     p {
-      color: #2B3442;
+      color: var(--color-4);
       font-weight: 700;
       @include device(tablet) {
         font-size: map-get($fonts , "$medium2");

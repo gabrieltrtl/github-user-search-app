@@ -53,7 +53,7 @@ async function fetchGitHubUser(event) {
     </div>
 
     <div class="profile__bio">
-      <p class="bio__text">${data.bio || 'Biography Not Available'}</p>
+      <p class="bio__text">${data.bio || 'This profile has no bio'}</p>
     </div>
 
     <div class="profile__numbers">

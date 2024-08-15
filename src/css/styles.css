@@ -14,6 +14,7 @@ html[data-theme=dark] {
   --color-1: #FFFFFF;
   --color-2: #0079FF;
   --color-3: #FFFFFF;
+  --color-4: #FFFFFF;
   --color-5: #FFFFFF;
   --neutral-color-1: #1E2A47;
   --neutral-color-2: #141D2F;
@@ -217,7 +218,7 @@ input[type=search]::placeholder {
   }
 }
 .profile__info .profile__username {
-  color: var(--color-1);
+  color: #0079FF;
 }
 @media (min-width: 75rem) {
   .profile__info {
@@ -271,7 +272,7 @@ input[type=search]::placeholder {
   gap: 8px;
 }
 .profile__numbers .container p {
-  color: #2B3442;
+  color: var(--color-4);
   font-weight: 700;
 }
 @media (min-width: 700px) {
