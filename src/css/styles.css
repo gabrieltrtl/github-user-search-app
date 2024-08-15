@@ -260,6 +260,7 @@ input[type=search]::placeholder {
   gap: 8px;
 }
 .profile__numbers .container p {
+  color: #2B3442;
   font-weight: 700;
 }
 @media (min-width: 700px) {

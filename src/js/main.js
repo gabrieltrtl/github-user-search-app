@@ -58,24 +58,31 @@ async function fetchGitHubUser(event) {
     </div>
 
     <div class="profile__social container">
-      <div class="social__item">
+      <div class="social__item location">
       <img src="./assets/icon-location.svg">
         <p>${data.location || 'Not Available'}<p>
       </div>
-      <div class="social__item">
+      <div class="social__item website">
       <img src="./assets/icon-website.svg">
         <p>${data.blog || 'Not Available'}<p>
       </div>
-      <div class="social__item">
+      <div class="social__item twitter">
       <img src="./assets/icon-twitter.svg">
         <p>${data.twitter_username || 'Not Available'}<p>
         </div>
-      <div class="social__item">
+      <div class="social__item company">
       <img src="./assets/icon-company.svg">
       <p>${data.company || 'Not Available'}<p>
       </div>
     </div>
     `
+
+    const elements = profileResults.querySelectorAll('p');
+    elements.forEach(element => {
+      if (element.textContent === 'Not Available') {
+        element.style.opacity = '0.5'; // Define a cor desejada aqui
+      }
+    });
     
 
   } catch (error) {
